@@ -1,5 +1,5 @@
 <?php
 session_start() ;
 session_destroy();
-header("location:e-learning.php");
+header("location:index.php");
 ?>

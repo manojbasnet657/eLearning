@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect('localhost', 'root', '', 'project');
+$con = mysqli_connect('localhost', 'root', '', 'project2');
 
   $A_name =$_POST['username'];
   $A_password =$_POST['password'];

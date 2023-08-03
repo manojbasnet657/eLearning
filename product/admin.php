@@ -37,7 +37,7 @@ if(!$_SESSION['admin']){
          
             <a href="logout.php" class="text-decoration-none text-white">Logout</a>|
             <!-- <a href="sales.php" class="text-decoration-none text-white">ORDER DETAILS(<?php echo $row_count2 ?>)</a> | -->
-            <a href="../fitness.php" class="text-decoration-none text-white">Userpanal</a>
+            <a href="../index.php" class="text-decoration-none text-white">Userpanal</a>
 
         </span>
     </div>

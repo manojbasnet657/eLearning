@@ -10,13 +10,13 @@ if(mysqli_num_rows($result)){
     echo"
     <script >
     alert('successfully login');
-    window.location.href= 'e-learning.php';
+    window.location.href= 'index.php';
     </script>
     ";
 }
 else{
     echo"
-    <script >
+    <script>
     alert(' incorrect email/user/password')
     window.location.href= 'user-login.php';
     </script>

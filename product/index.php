@@ -27,8 +27,12 @@
                         <input type="text" class="form-control" name="videoTitle" id="" placeholder="Enter video title">
                     </div>
                     <div class="mb-3">
-                        <label for="" class="form-label">File upload</label>
+                        <label for="" class="form-label">video upload</label>
                         <input type="file" class="form-control" name="videoFile" id="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Thumbnail upload</label>
+                        <input type="file" class="form-control" name="" id="">
                     </div>
                     <div class="mb-3">
                         <label for="" class="form-label">video Description:</label>
