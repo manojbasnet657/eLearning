@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Admin</title>
     <?php
     include 'admin.php';
 ?>
@@ -32,24 +32,28 @@
                     </div>
                     <div class="mb-3">
                         <label for="" class="form-label">Thumbnail upload</label>
-                        <input type="file" class="form-control" name="" id="">
+                        <input type="file" class="form-control" name="videoImage" id="">
                     </div>
                     <div class="mb-3">
                         <label for="" class="form-label">video Description:</label>
                         <input type="text" class="form-control" name="videoDescription" id="" placeholder="Describe">
                     </div>
-                    <!-- <div class="mb-3">
+                    <div class="mb-3">
+                        <label for="" class="form-label">video Tags:</label>
+                        <input type="text" class="form-control" name="videoTags" id="" placeholder="Enter tags">
+                    </div>
+                   
                         <label for="" class="form-label">Select Page Category:</label>
-                        <select class="form-select bg-light " name="pages">
-                            <option value="thumb">Java</option>
-                            <option value="gloves">C Programming</option>
-                            <option value="back">Guitar</option>
-                            <option value="band">Python</option>
-                            <option value="knee">Knee</option>
-                            <option value="shoulder">Shoulder</option>
+                        <select class="form-select bg-light " name="videocategories">
+                            <option value="java">Java</option>
+                            <option value="javascript">Javascript</option>
+                            <option value="HTML">HTML</option>
+                            <option value="PhP">PhP</option>
+                            <option value="python">python</option>
+                           
 
                         </select>
-                    </div> -->
+                    </div> 
                     <button class="bg-danger fs-4 fw-bold my-3 form-control text-white" name="submit">Upload</button>
 
                 </form>
@@ -80,7 +84,7 @@
         <tr>
         <td >$row[vid]</td>
         <td >$row[videoTitle]</td>
-        <td ><img src='$row[videoFile]' height= '90px' width='200px' ></td>
+        <td ><img src='$row[videoImage]' height= '90px' width='200px' ></td>
         <td ><a href='http://localhost/elearning/product/update.php?id=$row[vid]' class='btn btn-warning'>UPDATE</a></td>
         <td ><a href='delete.php? id=$row[vid]' class='btn btn-danger'>REMOVE</a></td>
          

@@ -35,7 +35,7 @@
                 </div>
                 
                     <div class="mb-3">
-                    <button class="w-100 bg-warning fs-4 text-white"><a href="register.php" class="text-decoration-none text-white"  >REGISTER</a></button>
+                    <button class="w-100 bg-warning fs-4 text-white"><a href="register.php" class="text-decoration-none text-white">REGISTER</a></button>
                     
                 </div>
                 </form>

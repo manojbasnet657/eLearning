@@ -21,7 +21,8 @@ $sql = "SELECT * FROM `videos`WHERE vid=$id";
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tail.js"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <title></title>
 </head>
 <body>
@@ -144,7 +145,7 @@ function getVideoDataById($connection, $videoId) {
   
 <div>
     <video width="100%" style="height: 100%; border:0.1rem solid black;" class='card-img-top' controls>
-        <source src="product/<?= $videoF ?>" type="video/mp4">
+        <source src="product/<?= $video ?>" type="video/mp4">
     </video>
 </div>
 

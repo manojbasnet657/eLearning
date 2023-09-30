@@ -46,7 +46,7 @@ if(!$_SESSION['admin']){
     <h2 class="text-center">Open</h2>
 </div>
 <div class=" col-md-6 bg-danger text-center m-auto"> 
-    <a href="index.php" class="text-white text-decoration-none fs-5 fw-bold px-5">Add product</a>
+    <a href="index.php" class="text-white text-decoration-none fs-5 fw-bold px-5">Add Courses</a>
     <a href="user-no.php" class="text-white text-decoration-none fs-5 fw-bold px-5">User(<?php echo $row_count ?>)</a>
 
 </div>

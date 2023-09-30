@@ -11,10 +11,7 @@
   
 
     <style>
-        body {
-            background-color: green;
-
-        }
+       
     </style>
 
 
@@ -34,7 +31,7 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Password:</label>
-                        <input type="password " name ="password" class="form-control"   placeholder="****************">
+                        <input type="password" name ="password" class="form-control"   placeholder="****************">
                     </div>
                     
                     

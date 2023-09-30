@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -37,7 +36,7 @@
         display: flex;
         flex-direction: column;
         background-color: white;
-        border: 0.2rem solid gray ;
+        border: 0.2rem solid gray;
         border-radius: 25px;
     }
 
@@ -51,7 +50,7 @@
         top: 10rem;
         left: 25%;
         right: 25%;
-        
+
 
     }
 
@@ -78,9 +77,11 @@
                     while ($row = $result->fetch_assoc()) {
                         $name = $row["videoTitle"];
                         $video = $row["videoFile"];
+                        $image = $row["videoImage"];
                         $description = $row["videoDescription"];
                         $tag = $row["tag"];
                         $vid = $row["vid"];
+
                 ?>
                         <div class="videoPopBox hide" id="videoData<?= $vid ?>">
 
@@ -89,22 +90,22 @@
                         <div class='col-md-6 col-lg-3 m-auto mb-3 border-dark'>
                             <div class='card m-auto border border-dark border-radius' style='width: 18rem;'>
                                 <div class='card-body text-center  bg-dark'>
-                                    <video width="100%" controls="false" style="height: 100%; border:0.1rem solid black; border-radius:10px;" class='card-img-top' controls>
-                                        <source src="product/<?= $video ?>" type="video/mp4">
+                                    <img src="product/<?= $image ?>" alt="" controls="false" style="height: 200px; border:0.1rem solid white; border-radius:10px;" class='card-img-top' controls>
 
-                                    </video>
                                     <div style="height: 200px;width:100%;" class="cardVideoPlayBtn ">
                                         <svg id="video<?= $vid ?>" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="svgIcon" height="2rem" viewBox="0 0 384 512">
-                                            <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" stroke="white" stroke-width="3rem" />                                        </svg>
+                                            <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" stroke="white" stroke-width="3rem" />
+                                        </svg>
 
                                     </div>
                                     <div class='card-body text-center'>
                                         <input type='hidden' value='' name='vid'>
-                                        <p class='card-title  text-capitalize  fs-6 fw-bold text-light' name='videoTitle'><?=$name?></p>
+                                        <p class='card-title  text-capitalize  fs-6 fw-bold text-light' name='videoTitle'><?= $name ?></p>
                                     </div>
-                                    <p class='text-light   '><?=$description?></p>
+                                    <p class='text-light   '><?= $description ?></p>
                                 </div>
                             </div>
+
                             <script>
                                 const videoId<?= $vid ?> = document.getElementById('video<?= $vid ?>');
                                 const videoData<?= $vid ?> = document.getElementById('videoData<?= $vid ?>');
@@ -131,10 +132,10 @@
                                                         <p><?= $description ?></p>
                                                     </div>
                                                     <div>
-                                                    <p><?= $tag ?></p>
+                                                   
                                                     </div>
                                                     <div>
-                                                    <p><a href="search2.php?vid=<?=$vid?>">click here for full screen</a></p>
+                                                    <p><a  class="text-danger text-decoration-none pe-2"href="algorithm.php?vid=<?= $vid ?>">click here for full screen</a></p>
                                                     </div>
                                                 </div>`;
                                     videoData<?= $vid ?>.innerHTML = element;

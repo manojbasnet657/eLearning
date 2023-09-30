@@ -17,7 +17,7 @@
 
 <body>
     <?php
-    $con = mysqli_connect("localhost", "root", "", "project");
+    $con = mysqli_connect("localhost", "root", "", "project2");
     $record = mysqli_query($con, "SELECT * FROM `userlogin` ");
     $row_count = mysqli_num_rows($record);
 

@@ -37,7 +37,7 @@
 
                     </div>
                     <div class="mb-3">
-                    <button class="w-100 bg-danger fs-4 text-white" name="submit">REGISTER</button>
+                    <button class="w-100 bg-danger fs-4 text-white" name="submits">REGISTER</button>
 
                 </div>
                 
